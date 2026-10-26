@@ -120,11 +120,17 @@
           </div>
           <div class="form-row">
             <label for="email">E-mail profissional <span>*</span><input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@empresa.com.br"></label>
-            <label for="topic">Assunto <span>*</span><select id="topic" name="topic" required><option value="">Selecione</option><option>Licenças e softwares</option><option>Serviços especializados de TI</option><option>Parcerias com fabricantes</option><option>Outros assuntos</option></select></label>
+            <label for="topic">Assunto <span>*</span><select id="topic" name="topic" required><option value="">Selecione</option><option>Licenças e softwares</option><option>Pedido de cotação de preços — contratação pública/dispensa de licitação</option><option>Serviços especializados de TI</option><option>Parcerias com fabricantes</option><option>Outros assuntos</option></select></label>
+          </div>
+          <div class="attachment-field" id="attachment-field" hidden>
+            <label for="attachment">Anexo para pedido de cotação de preços <span class="optional-label">(opcional)</span>
+              <input id="attachment" name="attachment" type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.odt,.ods,.zip,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/csv,application/zip">
+            </label>
+            <p class="attachment-help">Use este campo para anexar TR, ETP, especificações, planilha de itens ou outros documentos necessários à elaboração da cotação. Limite recomendado: 10 MB por arquivo.</p>
           </div>
           <label for="message">Como podemos ajudar? <span>*</span><textarea id="message" name="message" rows="4" required placeholder="Descreva brevemente sua necessidade"></textarea></label>
           <button class="button button-primary form-submit" type="submit">Preparar mensagem <span aria-hidden="true">→</span></button>
-          <p class="form-note">O formulário abrirá seu aplicativo de e-mail com a mensagem preparada. Nenhum dado será enviado automaticamente por este site.</p>
+          <p class="form-note">Para receber anexos, é necessário configurar o serviço de envio do formulário antes da publicação. Não inclua dados pessoais sensíveis ou informações sigilosas nos documentos.</p>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -137,7 +143,13 @@
       <p>Tecnologia a serviço da gestão pública.</p>
       <nav aria-label="Navegação do rodapé"><a href="#inicio">Início</a><a href="#solucoes">Soluções</a><a href="#quem-somos">Quem somos</a><a href="#parcerias">Parceiros</a><a href="#contato">Contato</a></nav>
     </div>
+    <div class="container footer-company-details">
+      <div><strong>Dados cadastrais</strong><span>CNPJ: 00.000.000/0001-00 <em>— dado fictício para demonstração</em></span></div>
+      <div><strong>Endereço</strong><span>Setor Comercial, Brasília/DF — CEP 70000-000 <em>— endereço fictício</em></span></div>
+      <div><strong>Telefone</strong><a href="tel:+5561999999999">(61) 99999-9999 <em>— número fictício</em></a></div>
+    </div>
     <div class="container footer-bottom"><span>© <span id="year"></span> Govnex Soluções Digitais</span><span>Conectando tecnologia, gestão e cidadania.</span></div>
   </footer>
+  <a class="whatsapp-float" href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Govnex." target="_blank" rel="noopener noreferrer" aria-label="Fale com a Govnex pelo WhatsApp (número fictício)"><span aria-hidden="true">◉</span><span>WhatsApp</span></a>
 </body>
 </html>

@@ -21,11 +21,12 @@ Abra `index.html` no navegador. Para uma experiência local mais próxima de hos
 
 ## Antes de publicar
 
-1. Em `script.js`, troque `contato@seudominio.com.br` pelo e-mail institucional real.
-2. Confirme se as categorias de serviços listadas refletem aquilo que a empresa realmente pretende ofertar.
-3. Adicione os dados empresariais e políticas legais quando estiverem definidos.
-4. A imagem de fundo e a fonte usam recursos externos; para máxima autonomia, baixe os arquivos e hospede-os localmente.
-5. Teste o formulário em um computador com aplicativo de e-mail configurado. Ele usa `mailto:` e não armazena nem envia dados a um backend.
+1. **Substitua todos os dados fictícios no rodapé**: CNPJ, endereço e telefone. O número do botão WhatsApp também é fictício; atualize o link `wa.me` em `index.html`.
+2. Em `script.js`, substitua `FORM_ENDPOINT` pelo endpoint real de um serviço de formulário que aceite anexos. O exemplo está preparado para um endpoint FormSubmit, mas permanece desativado enquanto estiver como `SEU_EMAIL_REAL`.
+3. Faça um teste real de recebimento de mensagem e anexo antes de divulgar o site. O formulário não envia nem armazena dados enquanto o endpoint não estiver configurado.
+4. O campo de anexo aparece quando o visitante escolhe **Pedido de cotação de preços — contratação pública/dispensa de licitação**. O limite validado no navegador é 10 MB; confirme também o limite do serviço escolhido.
+5. Confirme se as categorias de serviços listadas refletem aquilo que a empresa realmente pretende ofertar e publique as políticas de privacidade/uso de dados adequadas.
+6. A imagem de fundo e a fonte usam recursos externos; para máxima autonomia, baixe os arquivos e hospede-os localmente.
 
 ## Publicar na Vercel
 
@@ -40,4 +41,6 @@ Abra `index.html` no navegador. Para uma experiência local mais próxima de hos
 ## Observações
 
 - O conteúdo não afirma que a Govnex já possui fabricantes representados, certificações ou contratos.
-- O formulário é apenas um atalho para abrir o aplicativo de e-mail. Para receber mensagens diretamente no site, será necessário integrar um serviço de formulário ou uma função backend.
+- O CNPJ, endereço e telefone mostrados são **fictícios e apenas demonstrativos**. Não publique o site comercialmente com esses dados.
+- O botão de WhatsApp usa um número fictício. Substitua-o pelo número empresarial antes de publicar.
+- O formulário inclui um campo de anexo específico para pedidos de cotação de preços, mas o envio só funcionará depois da configuração de um serviço compatível. Para pedidos ligados a contratações públicas, revise os documentos recebidos e trate-os com confidencialidade.
